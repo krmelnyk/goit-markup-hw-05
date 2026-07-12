@@ -1,8 +1,8 @@
 # WebStudio
 
 An educational single-page website created as part of the GoIT HTML and CSS
-homework assignment. This version is updated for `goit-markup-hw-03` and builds
-the WebStudio layout with semantic HTML, CSS, and Flexbox.
+homework assignment. This version is updated for `goit-markup-hw-05` and builds
+the WebStudio layout with semantic HTML, CSS, forms, and a modal window.
 
 ## Implemented Sections
 
@@ -12,6 +12,8 @@ the WebStudio layout with semantic HTML, CSS, and Flexbox.
 - Team section with four profile cards
 - Portfolio section with six project cards
 - Footer with logo and description
+- Newsletter subscription form
+- Service request form in a modal window
 
 ## Technologies
 
@@ -30,8 +32,7 @@ the WebStudio layout with semantic HTML, CSS, and Flexbox.
 - Feature, team, and portfolio card widths are calculated with `calc()`.
 - The portfolio card border is applied only on the left, right, and bottom
   sides, as required by the homework criteria.
-- The project does not use JavaScript, CSS Grid, floats, inline styles,
-  `!important`, decorative shadows, or fixed section heights.
+- The modal opens when the `.is-open` class is added to `.backdrop`.
 
 ## Project Structure
 
@@ -44,6 +45,7 @@ the WebStudio layout with semantic HTML, CSS, and Flexbox.
 │   ├── header.css
 │   ├── hero.css
 │   ├── main.css
+│   ├── modal.css
 │   ├── portfolio.css
 │   └── team.css
 ├── images/
@@ -66,9 +68,6 @@ required.
 
 - `modern-normalize` is connected before the local stylesheet.
 - `git diff --check` passes without whitespace issues.
-- Local static checks confirm that there are no scripts, inline styles, CSS
-  Grid, floats, `!important`, decorative shadows, or layout `margin-right`
-  usage.
-- The only fixed `height` values are the required image reset
-  (`height: auto`) and the `.sr-only` accessibility helper.
+- Form fields have associated labels and descriptive `name` attributes.
+- The textarea has a fixed size, and the custom checkbox uses the SVG sprite.
 - All images are stored locally in JPG format.
